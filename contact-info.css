@@ -1,9 +1,9 @@
 .contact-info {
-    background-color: #fff;
+    background-color: #fce0c5;
     width: 300px;
     margin: 50px auto;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .contact-info h1 {
@@ -20,7 +20,7 @@
     text-align: center;
 }
 .contact-info a {
-    color:#ff6600;
+    color:#e6b8a2;
     text-decoration: none;
 }
 
@@ -39,10 +39,11 @@
 }
 
 footer {
-    background-color: #303030;
+    background-color:#b78e72;
     padding: 5px;
     text-align: left;
     margin-top: 20px;
+    border-top: 2px solid black;
   }
 
 @media only screen and (max-width: 600px) {
