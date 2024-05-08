@@ -2,21 +2,21 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('images/fon.jpg');
+    background-color: #ffdab9;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(5, 186, 8);
+    background-color: #ff662a;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #f0f0f0;
+    background-color: #000;
 }
 
 .header-container {
@@ -24,15 +24,16 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 120px;
-    background-color: #303030;
-    color: white;
+    height: 140px;
+    background-color: #b78e72;
+    color: black;
     padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 2000;
+    border-bottom: 2px solid black; /* Добавляем подчеркивание черной тонкой полоской */
 }
 
 .logo {
@@ -49,11 +50,11 @@ button {
 }
 
 button.myWorks, button.businessHelp, button.services, button.reviews {
-    background-color: rgb(5, 186, 8);
+    background-color: #ffc32a;
 }
 
 button.myWorks:hover, button.businessHelp:hover, button.services:hover, button.reviews:hover {
-    background-color: rgb(5, 125, 7);
+    background-color: rgb(255, 149, 0);
 }
 
 a.myWorks:hover, a.businessHelp:hover, a.services:hover, a.reviews:hover {
@@ -61,19 +62,28 @@ a.myWorks:hover, a.businessHelp:hover, a.services:hover, a.reviews:hover {
 }
 
 .content {
-    margin-top: 140px;
+    margin-top: 180px;
 }
 
 .container {
-    background-color: #d5d5d5;
+    background-color: #e6b8a2;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin: 20px auto;
     margin-bottom: 20px;
-    max-width: 800px;
-    position: relative;
+    max-width: 950px;
+    display: block;
+    margin: 40px auto; /* Центрирует контейнер по горизонтали и устанавливает одинаковое расстояние сверху и снизу */
+}
+
+/* Создаем одинаковое расстояние между блоками */
+.container + .container {
+    margin-top: 40px; /* Устанавливает одинаковое расстояние между блоками */
+}
+
+.container h2 {
+    color:#000;
 }
 
 img {
@@ -99,7 +109,7 @@ button:hover {
 }
 
 h2 {
-    color: #333;
+    color: black;
 }
 
 ul {
@@ -123,21 +133,22 @@ a:hover {
 #about {
     background-color: none;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 950px;
 }
 
 #about p {
     font-size: 25px;
-    color: #007bff;
+    color:#805333;
     margin-bottom: 10px;
 }
 
 #about {
     text-align: center;
+    display: flex;
 }
 
 h2 {
@@ -206,12 +217,12 @@ ul {
   
   #reviews h2 {
     font-size: 2em;
-    color: #333;
+    color: black;
   }
   
   #reviews h4 {
     font-size: 1.5em;
-    color: #007bff;
+    color: #805333;
   }
   
   #reviews h5 {
@@ -227,9 +238,9 @@ ul {
   .pomosh {
     flex: 1;
     padding: 10px;
-    background-color: #f0f0f0; /* Белый фон */
+    background-color: #ffc57d; /* Белый фон */
     border-radius: 10px;
-    border: 2px solid #007bff; /* Синяя рамка толщиной 2 пикселя */
+    border: 2px solid #ff662a; /* Синяя рамка толщиной 2 пикселя */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin: 0 10px; /* Добавим небольшой отступ между столбцами */
@@ -248,13 +259,13 @@ ul {
     display: flex;
     justify-content: space-around;
     margin: 20px auto;
-    background-color: #d5d5d5;
+    background-color: #d5d5d500;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin-bottom: 20px;
-    max-width: 800px;
+    max-width: 950px;
     position: relative;
 }
 
