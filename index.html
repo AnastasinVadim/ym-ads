@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!--Шапка-->
     <header>
         <div class="header-container">
             <h1 class="logo">Успешный Маркетолог</h1>
+            <!--Навигация по сайту-->
             <div class="button-container">
-                <button class="myWorks" onclick="scrollToAbout2()">Мои работы</button>
+                <!--<button class="myWorks" onclick="scrollToAbout2()">Мои работы</button>
                 <script>
                     function scrollToAbout2() {
                         const headerHeight = document.querySelector('.header-container').offsetHeight; // Получаем высоту шапки
@@ -27,7 +29,7 @@
                             behavior: 'smooth'
                         });
                     }
-                </script>
+                </script>-->
                 <button class="businessHelp" onclick="scrollToAbout3()">Как я могу помочь вашему бизнесу?</a></button>
                 <script>
                     function scrollToAbout3() {
@@ -72,12 +74,62 @@
         <script src="shapka.js"></script>
     </header>
 
+    <!--Основная информация-->
     <div class="content">
+        <!--Заголовок блока-->
         <div class="container">
-            <h1>Настройка контекстной рекламы</h1>
-            <button class="container" onclick="scrollToAbout()">Узнать больше!</button>
+            <div class="class1">
+                <h1>Настройка контекстной рекламы</h1>
+                <button class="container" onclick="scrollToAbout()">Узнать больше!</button>
+            </div>
         </div>
-        
+        <!--Форма-->
+        <div class="container">
+            <div class="log-form">
+                <h2>Оставить заявку</h2>
+                <form class="telegram-form">
+                  <input type="text" name="name" placeholder="Имя" autocomplete="off" />
+                  <input type="text" name="phone" placeholder="Телефон" autocomplete="off" />
+                  <button type="submit" class="btn">отправить</button>
+                </form>
+            </div>
+        </div>
+        <style>
+            .log-form {
+                background-color: #fce0c5;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+            }
+            
+            .log-form h2 {
+                font-family: 'Arial', sans-serif;
+                color: black;
+            }
+            
+            .telegram-form input {
+                width: 80%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 2px solid #ff662a; 
+                border-radius: 5px;
+            }
+            .telegram-form button {
+                width: 30%;
+                padding: 10px;
+                background-color: #ff662a;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .telegram-form button:hover {
+                background-color: #b73400;
+            }
+        </style>
+        <script src="main.js"></script>
+    
+        <!--Информация блока-->
         <div class="container" id="about">
             <div class="column">
                 <b>
@@ -95,208 +147,150 @@
                 </b>
             </div>
         </div>
-        
+    </div>
 
-
-
-
-        <!--Форма-->
-        <div class="container">
-            <div class="log-form">
-                <h2>Оставить заявку</h2>
-                <form class="telegram-form">
-                  <input type="text" name="name" placeholder="Имя" autocomplete="off" />
-                  <input type="text" name="phone" placeholder="Телефон" autocomplete="off" />
-                  <button type="submit" class="btn">отправить</button>
-                </form>
-            </div>
-        </div>
-        <style>
-        .log-form {
-            background-color: #ccc;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        
-        .log-form h2 {
-            font-family: 'Arial', sans-serif;
-            color: #333;
-        }
-        
-        .telegram-form input {
-            width: 80%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 2px solid #007bff; 
-            border-radius: 5px;
-        }
-        
-        .telegram-form button {
-            width: 30%;
-            padding: 10px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        
-        .telegram-form button:hover {
-            background-color: #0056b3;
-        }
-    </style>
-        <script src="main.js"></script>
-
-
-        <!--Услуги-->
-        <div id="services" class="container">
-            <h2>Услуги</h2>
-            <div class="uslug">
-                <p>
-                    <img src="images/yan_dir.PNG">
-                    <b><h2>ЯндексДирект</h2></b>
-                    <h5>Эффективное продвижение в Яндекс Директ с максимальным возвратом инвестиций.</h5>
-                </p>
-                <p>
-                    <img src="images/audit_rekl.PNG">
-                    <b><h2>Аудит рекламы</h2></b>
-                    <h5>Аналитика текущих рекламных кампаний поможет подобрать эффективные методы продвижения.</h5>
-                </p>
-                <p>
-                    <img src="images/integr.PNG">
-                    <b><h2>Интеграция</h2></b>
-                    <h5>Настройка интеграции сквозной аналитики с CRM и рекламными кампаниями дает возможность оценить эффективность рекламных каналов и затрат на них.</h5>
-                </p>
-            </div>
-        </div>
-        
-        
-        <!--Обо мне-->
-        <div class="container" id="info">
+    <!--Услуги-->
+   <div id="services" class="container">
+        <h2>Услуги</h2>
+        <div class="uslug">
             <p>
-                <h1>Сертифицированный специалист. Настроила более 1500 рекламных компаний.</h1>
-                <h2>Мой релевантный опыт работы помогает вывести предприятие на больший доход, повысить узнаваемость бизнеса.</h2>
+                <img src="images/yan_dir.PNG">
+                <b><h2>ЯндексДирект</h2></b>
+                <h5>Эффективное продвижение в Яндекс Директ с максимальным возвратом инвестиций.</h5>
             </p>
-            <div class="spisok">
-                <h2>Опыт в различных сферах:</h2>
-                <div class="row">
-                    <div class="column">
-                        <img src="images/image1.PNG" alt="Изображение 1"><i>Медицинские организации</i>
-                    </div>
-                    <div class="column">
-                        <img src="images/image2.PNG" alt="Изображение 2"><i>Предприятия по доставке еды</i>
-                    </div>
-                    <div class="column">
-                        <img src="images/image3.PNG" alt="Изображение 3"><i>Реклама застройщиков</i>
-                    </div>
-                    <div class="column">
-                        <img src="images/image4.PNG" alt="Изображение 4"><i>Создание рекламы по негабаритным перевозкам</i>
-                    </div>
+            <p>
+                <img src="images/audit_rekl.PNG">
+                <b><h2>Аудит рекламы</h2></b>
+                <h5>Аналитика текущих рекламных кампаний поможет подобрать эффективные методы продвижения.</h5>
+            </p>
+            <p>
+                <img src="images/integr.PNG">
+                <b><h2>Интеграция</h2></b>
+                <h5>Настройка интеграции сквозной аналитики с CRM и рекламными кампаниями дает возможность оценить эффективность рекламных каналов и затрат на них.</h5>
+            </p>
+        </div>
+    </div>
+        
+    <!--Обо мне-->
+    <div class="container" id="info">
+        <p>
+            <h1>Сертифицированный специалист. Настроила более 1500 рекламных компаний.</h1>
+            <h2>Мой релевантный опыт работы помогает вывести предприятие на больший доход, повысить узнаваемость бизнеса.</h2>
+        </p>
+        <div class="spisok">
+            <h2>Опыт в различных сферах:</h2>
+            <div class="row">
+                <div class="column">
+                    <img src="images/image1.PNG" alt="Изображение 1"><i>Медицинские организации</i>
+                </div>
+                <div class="column">
+                    <img src="images/image2.PNG" alt="Изображение 2"><i>Предприятия по доставке еды</i>
+                </div>
+                <div class="column">
+                    <img src="images/image3.PNG" alt="Изображение 3"><i>Реклама застройщиков</i>
+                </div>
+                <div class="column">
+                    <img src="images/image4.PNG" alt="Изображение 4"><i>Создание рекламы по негабаритным перевозкам</i>
                 </div>
             </div>
-            <br>
-            
-            <div class="otdel">
-                <p>
-                    <h2>Опыт подтвержден официальными сертификатами по Яндекс.Директ и Яндекс.Метрика.</h2>
-                </p>
-                <ul>
-                    <li><img src="images/галочка.PNG">Полная настройка, детальное ведение и аудит рекламы в каналах: ЯндексДирект, myTarget, Вконтакте, Дзен, ЯБизнес.</li>
-                    <li><img src="images/галочка.PNG">Интеграция рекламных источников с системой аналитики Roistat.</li>
-                    <li><img src="images/галочка.PNG">Разрабатываю новые рекламные кампании, в том числе с нуля. Исправляю и помогаю дорабатывать гайды в  старых рекламных кампаниях. Выявляю слабые стороны настройки. Провожу аудит рекламных кампаний за день  (это помогает выяснить не качественно настроенную рекламу и причины слива бюджета).</li>
-                    <li><img src="images/галочка.PNG">Прорабатываю семантику, аватар пользователя.</li>
-                    <li><img src="images/галочка.PNG">Аудит текущих рекламных кампаний в максимальном объеме.</li>
-                </ul>
-            </div>
-            <br>
-            <p>
-                <h2>Почему нужно со мной работать:</h2>
-                <h4>- Быстрота созданий компаний, всегда на связи.</h4>
-                <h4>- Я деловая, уравновешенная, есть опыт общения с первыми лицами крупных корпораций.</h4>
-                <h4>- Есть авторитет и уважение у менеджеров Яндекса, поэтому в достаточно короткий срок могу через консультацию с ними выявить вашу проблему.</h4>
-                <h4>- Регулярно повышаю профессиональные навыки. Всегда в курсе современных тенденций, новых законов в области рекламы.</h4>
-                <h4>- Отношусь с большой эмпатией к каждому проекту.</h4>
-                <h4>- Соблюдаю законы о рекламе, что очень важно для каждого рекламодателя.</h4>
-            </p>
         </div>
+        <br>
         
-        <!--Контекстная реклама 4-и плитки-->
-        <div id="businessHelp" class="osn">
-            <div class="pomosh">
-                <h3>Контекстная реклама</h3>
-                <p>Повышение видимости и конверсии вашего бизнеса.</p>
-            </div>
-            <div class="pomosh">
-                <h3>Анализ ключевых слов</h3>
-                <p>Тщательный анализ и выбор ключевых слов.</p>
-            </div>
-            <div class="pomosh">
-                <h3>Таргетирование аудитории</h3>
-                <p>Привлечение целевой аудитории с высокой конверсией.</p>
-            </div>
-            <div class="pomosh">
-                <h3>Управление бюджетом</h3>
-                <p>Эффективное распределение и оптимизация рекламного бюджета.</p>
-            </div>
-        </div>
-
-        <!--Блок "Мои работы"-->
-        <!--скрыт
-        <div id="myWorks" class="container">    
-            <h2>Мои работы</h2>
-        </div>
-    -->
-
-
-        <!--Отзывы-->
-        <div id="reviews" class="container">
-            <h2>Отзывы</h2>
+        <div class="otdel">
             <p>
-                <h4>Сотрудничество с Радмилой принесло нам заметный прирост конверсии. Очень довольны результатом!</h4>
-                <h5>ЕЛЕНА К.</h5>
+                <h2>Опыт подтвержден официальными сертификатами по Яндекс.Директ и Яндекс.Метрика.</h2>
             </p>
-            <p>
-                <h4>Профессиональный подход и отличные результаты. Сотрудничество с Радмилой — отличный выбор для бизнеса.</h4>
-                <h5>ДМИТРИЙ П.</h5>
-            </p>
-            <p>
-                <h4>Компетентный подход и отличные результаты. Радмила — профессионал своего дела!</h4>
-                <h5>ОЛЬГА С.</h5>
-            </p>
+            <ul>
+                <li><img src="images/галочка.PNG">Полная настройка, детальное ведение и аудит рекламы в каналах: ЯндексДирект, myTarget, Вконтакте, Дзен, ЯБизнес.</li>
+                <li><img src="images/галочка.PNG">Интеграция рекламных источников с системой аналитики Roistat.</li>
+                <li><img src="images/галочка.PNG">Разрабатываю новые рекламные кампании, в том числе с нуля. Исправляю и помогаю дорабатывать гайды в  старых рекламных кампаниях. Выявляю слабые стороны настройки. Провожу аудит рекламных кампаний за день  (это помогает выяснить не качественно настроенную рекламу и причины слива бюджета).</li>
+                <li><img src="images/галочка.PNG">Прорабатываю семантику, аватар пользователя.</li>
+                <li><img src="images/галочка.PNG">Аудит текущих рекламных кампаний в максимальном объеме.</li>
+            </ul>
         </div>
+        <br>
+        <p>
+            <h2>Почему нужно со мной работать:</h2>
+            <h4>- Быстрота созданий компаний, всегда на связи.</h4>
+            <h4>- Я деловая, уравновешенная, есть опыт общения с первыми лицами крупных корпораций.</h4>
+            <h4>- Есть авторитет и уважение у менеджеров Яндекса, поэтому в достаточно короткий срок могу через консультацию с ними выявить вашу проблему.</h4>
+            <h4>- Регулярно повышаю профессиональные навыки. Всегда в курсе современных тенденций, новых законов в области рекламы.</h4>
+            <h4>- Отношусь с большой эмпатией к каждому проекту.</h4>
+            <h4>- Соблюдаю законы о рекламе, что очень важно для каждого рекламодателя.</h4>
+        </p>
+    </div>
+
+    <!--Контекстная реклама 4-и плитки-->
+    <div id="businessHelp" class="osn">
+        <div class="pomosh">
+            <h3>Контекстная реклама</h3>
+            <p>Повышение видимости и конверсии вашего бизнеса.</p>
+        </div>
+        <div class="pomosh">
+            <h3>Анализ ключевых слов</h3>
+            <p>Тщательный анализ и выбор ключевых слов.</p>
+        </div>
+        <div class="pomosh">
+            <h3>Таргетирование аудитории</h3>
+            <p>Привлечение целевой аудитории с высокой конверсией.</p>
+        </div>
+        <div class="pomosh">
+            <h3>Управление бюджетом</h3>
+            <p>Эффективное распределение и оптимизация рекламного бюджета.</p>
+        </div>
+    </div>
+
+    <!--Блок "Мои работы"-->
+    <!--скрыт
+    <div id="myWorks" class="container">    
+        <h2>Мои работы</h2>
+    </div>         -->
 
 
+    <!--Отзывы-->
+    <div id="reviews" class="container">
+        <h2>Отзывы</h2>
+        <p>
+            <h4>Сотрудничество с Радмилой принесло нам заметный прирост конверсии. Очень довольны результатом!</h4>
+            <h5>ЕЛЕНА К.</h5>
+        </p>
+        <p>
+            <h4>Профессиональный подход и отличные результаты. Сотрудничество с Радмилой — отличный выбор для бизнеса.</h4>
+            <h5>ДМИТРИЙ П.</h5>
+        </p>
+        <p>
+            <h4>Компетентный подход и отличные результаты. Радмила — профессионал своего дела!</h4>
+            <h5>ОЛЬГА С.</h5>
+        </p>
+    </div>
+    <!--Скрипт сайта переход по кнопкам-->
+    <script>
+        function scrollToAbout() {
+            const headerHeight = document.querySelector('.header-container').offsetHeight; // Получаем высоту шапки
+            const aboutMeElement = document.querySelector('#info');
+            const aboutMePosition = aboutMeElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
 
-        
-        <script>
-            function scrollToAbout() {
-                const headerHeight = document.querySelector('.header-container').offsetHeight; // Получаем высоту шапки
-                const aboutMeElement = document.querySelector('#info');
-                const aboutMePosition = aboutMeElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-
-                window.scrollTo({
-                    top: aboutMePosition,
-                    behavior: 'smooth'
-                });
-            }
-        </script>
+            window.scrollTo({
+                top: aboutMePosition,
+                behavior: 'smooth'
+            });
+        }
+    </script>
         
 
-
-        <div id="footer">
-            <footer id="footer">
-                <div class="contact-info">
-                    <link rel="stylesheet" href="contact-info.css">
-                    <h1>Контактная информация</h1>
-                    <h4>Подписывайтесь на соц.сети:</h4>
-                    <div class="social-icons">
-                        <p><a href="https://wa.me/89898174787" target="_blank"><img src="images/WA.PNG"></a></p>
-                        <p><a href="https://t.me/mrd_krd" target="_blank"><img src="images/TG.PNG"></a></p>
-                    </div>
+    <!--Foooter (информационная панель снизу сайта)-->
+    <div id="footer">
+        <footer id="footer">
+            <div class="contact-info">
+                <link rel="stylesheet" href="contact-info.css">
+                <h1>Контактная информация</h1>
+                <h4>Подписывайтесь на соц.сети:</h4>
+                <div class="social-icons">
+                    <p><a href="https://wa.me/89898174787" target="_blank"><img src="images/WA.PNG"></a></p>
+                    <p><a href="https://t.me/mrd_krd" target="_blank"><img src="images/TG.PNG"></a></p>
                 </div>
-            </footer>
-        </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
